@@ -1,0 +1,323 @@
+.div-General {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+
+.div-General .div-saludo {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.div-General .div-saludo .sub-div .div-imagen .imagen-persona {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 9px solid var(--blanco);
+}
+
+
+/*Desde aqui*/
+.text-nombre {  /*Le damos estilos al texto*/
+    text-align: center;
+    font-family: "Spartan", sans-serif;
+    font-size: 30px;
+    margin-left: 10%;
+    color: white;
+    position: relative;
+    margin: 0 auto;
+    width: 340px;
+ }
+
+.text-nombre:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 16px;
+    text-shadow: -1px 0 red;
+    top: 0;
+    color: var(--blanco);
+    background: var(--negro);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+.text-nombre:before {
+    content: attr(data-text);
+    position: absolute;
+    left: 8px;
+    text-shadow: 1px 0 blue;
+    top: 0;
+    color: var(--blanco);
+    background: var(--negro);
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+ @keyframes noise-anim {
+    0% {
+      clip: rect(51px, 9999px, 28px, 0);
+    }
+    5% {
+      clip: rect(70px, 9999px, 19px, 0);
+    }
+    10% {
+      clip: rect(92px, 9999px, 13px, 0);
+    }
+    15% {
+      clip: rect(85px, 9999px, 49px, 0);
+    }
+    20% {
+      clip: rect(45px, 9999px, 56px, 0);
+    }
+    25% {
+      clip: rect(26px, 9999px, 31px, 0);
+    }
+    30% {
+      clip: rect(62px, 9999px, 73px, 0);
+    }
+    35% {
+      clip: rect(34px, 9999px, 11px, 0);
+    }
+    40% {
+      clip: rect(26px, 9999px, 61px, 0);
+    }
+    45% {
+      clip: rect(34px, 9999px, 71px, 0);
+    }
+    50% {
+      clip: rect(35px, 9999px, 69px, 0);
+    }
+    55% {
+      clip: rect(92px, 9999px, 81px, 0);
+    }
+    60% {
+      clip: rect(26px, 9999px, 85px, 0);
+    }
+    65% {
+      clip: rect(2px, 9999px, 68px, 0);
+    }
+    70% {
+      clip: rect(54px, 9999px, 79px, 0);
+    }
+    75% {
+      clip: rect(35px, 9999px, 85px, 0);
+    }
+    80% {
+      clip: rect(70px, 9999px, 60px, 0);
+    }
+    85% {
+      clip: rect(32px, 9999px, 26px, 0);
+    }
+    90% {
+      clip: rect(94px, 9999px, 53px, 0);
+    }
+    95% {
+      clip: rect(99px, 9999px, 92px, 0);
+    }
+    100% {
+      clip: rect(42px, 9999px, 27px, 0);
+    }
+  }
+
+  @keyframes noise-anim-2 {
+    0% {
+      clip: rect(21px, 9999px, 49px, 0);
+    }
+    5% {
+      clip: rect(27px, 9999px, 52px, 0);
+    }
+    10% {
+      clip: rect(21px, 9999px, 70px, 0);
+    }
+    15% {
+      clip: rect(65px, 9999px, 25px, 0);
+    }
+    20% {
+      clip: rect(24px, 9999px, 10px, 0);
+    }
+    25% {
+      clip: rect(61px, 9999px, 64px, 0);
+    }
+    30% {
+      clip: rect(34px, 9999px, 47px, 0);
+    }
+    35% {
+      clip: rect(46px, 9999px, 93px, 0);
+    }
+    40% {
+      clip: rect(46px, 9999px, 9px, 0);
+    }
+    45% {
+      clip: rect(67px, 9999px, 36px, 0);
+    }
+    50% {
+      clip: rect(72px, 9999px, 20px, 0);
+    }
+    55% {
+      clip: rect(79px, 9999px, 26px, 0);
+    }
+    60% {
+      clip: rect(13px, 9999px, 87px, 0);
+    }
+    65% {
+      clip: rect(10px, 9999px, 25px, 0);
+    }
+    70% {
+      clip: rect(85px, 9999px, 11px, 0);
+    }
+    75% {
+      clip: rect(94px, 9999px, 35px, 0);
+    }
+    80% {
+      clip: rect(50px, 9999px, 86px, 0);
+    }
+    85% {
+      clip: rect(74px, 9999px, 67px, 0);
+    }
+    90% {
+      clip: rect(1px, 9999px, 40px, 0);
+    }
+    95% {
+      clip: rect(3px, 9999px, 48px, 0);
+    }
+    100% {
+      clip: rect(90px, 9999px, 23px, 0);
+    }
+  }
+
+
+.div-General .div-saludo .sub-div .div-text {
+    margin-top: 10%;
+    background-color: var(--negro);
+    text-align: center;
+}
+/*Hata aqui son los estilos para el efecto de glitch*/
+
+
+.div-General .div-eslogan{
+  position: relative;
+  margin-right: -50px;
+}
+
+.div-General .div-eslogan .div-p{
+  text-align: right;
+  color: var(--blanco);
+  font-family: "Teko", sans-serif;
+  font-size: 80px;
+  text-transform: uppercase;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 95%;
+  height: 30%;
+  margin: auto;
+}
+
+.fondo {
+  background: linear-gradient(rgba(43, 48, 44, 0.5), rgba(43, 48, 44, 0.5)),
+    url(../../assets/imagenes/fondo.jpg);
+  height: 105vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+
+}
+
+@media screen and (max-width: 880px){
+  .div-General .div-eslogan{
+    margin-bottom: 40%;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .div-General{
+    text-align: center;
+  }
+
+  .div-General .div-saludo .sub-div .div-imagen .imagen-persona {
+    width: 250px;
+    height: 250px;
+    margin-top: 25%;
+    border: 5px solid var(--blanco);
+  }
+
+  .div-General .div-eslogan{
+    margin-top: 2%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .div-General .div-eslogan .div-p{
+    width: 50%;
+    text-align: center;
+    font-size: 50px;
+
+  }
+}
+
+@media screen and (max-width: 593px){
+  .div-General{
+    text-align: center;
+  }
+
+  .div-General .div-saludo .sub-div .div-imagen .imagen-persona {
+    width: 225px;
+    height: 225px;
+    margin-top: 20%;
+  }
+
+  .div-General .div-eslogan .div-p{
+    width: 80%;
+    text-align: center;
+    font-size: 40px;
+
+  }
+}
+
+@media screen and (max-width: 375px){
+  .text-nombre {  /*Le damos estilos al texto*/
+    text-align: center;
+    font-family: "Spartan", sans-serif;
+    font-size: 20px;
+    margin-left: 10%;
+    color: white;
+    position: relative;
+    margin: 0 auto;
+    width: 230px;
+ }
+
+  .div-General .div-saludo .sub-div .div-text {
+    margin-top: 10%;
+    background-color: var(--negro);
+    text-align: center;
+    width: 230px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+  .div-General{
+    text-align: center;
+  }
+
+  .div-General .div-saludo .sub-div .div-imagen .imagen-persona {
+    width: 225px;
+    height: 225px;
+    margin-top: 20%;
+    margin-left: 6%;
+  }
+
+  .div-General .div-eslogan .div-p{
+    width: 80%;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 15%;
+    margin-left: 5%;
+  }
+}

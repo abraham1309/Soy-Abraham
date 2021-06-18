@@ -1,0 +1,122 @@
+.div-general-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+.div-general-text .div-texto{
+    text-align: center;
+    color: var(--blanco);
+    height: auto;
+    z-index: 3;
+}
+
+.div-general-text .div-texto .p-proximamente{
+    margin-bottom: -7%;
+    font-size: 80px;
+    font-family: 'Bangers', cursive;
+}
+
+.div-general-text .div-texto .p-primer{
+    margin-bottom: -25%;
+    font-size: 50px;
+    font-family: 'Amatic SC', cursive;
+}
+
+.div-general-text .div-texto .linea1{
+    font-size: 125px;
+    color: rgba(255, 255, 255, 0.411);
+    margin-bottom: -5%;
+}
+
+.div-general-text .div-texto .linea2{
+    font-size: 125px;
+    color: rgba(255, 255, 255, 0.411);
+    margin-bottom: 30%;
+}
+
+h1{
+    font-family: "Carter One", cursive;
+    font-size: 50px;
+    color: var(--blanco);
+    position: absolute;
+    margin-top: 5%;
+    text-align: center;
+    width: 100vw;
+    z-index: 3;
+}
+
+.div-color-fondo {
+    mix-blend-mode: difference;
+    z-index: -2;
+}
+
+.div-color-fondo::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    background: repeating-linear-gradient(to bottom, transparent 0%,rgba(255, 255, 255, 0.144) .30%, transparent 1%);
+}
+
+.fondo{
+    background: linear-gradient(rgba(43, 48, 44, 0.719), rgba(43, 48, 44, 0.719)), url(../../assets/imagenes/fondoProximamente.png);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 650px){
+    .div-general-text .div-texto .p-proximamente{
+        margin-bottom: -7%;
+        font-size: 55px;
+        font-family: 'Bangers', cursive;
+    }
+    
+    .div-general-text .div-texto .p-primer{
+        font-size: 35px;
+        font-family: 'Amatic SC', cursive;
+        margin-bottom: -35%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    h1{
+        font-size: 40px;
+
+    }
+
+    .div-general-text .div-texto .p-proximamente{
+        margin-bottom: -7%;
+        font-size: 45px;
+        font-family: 'Bangers', cursive;
+    }
+    
+    .div-general-text .div-texto .p-primer{
+        font-size: 25px;
+        font-family: 'Amatic SC', cursive;
+        margin-bottom: -40%;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .div-general-text .div-texto .p-proximamente{
+        margin-bottom: -7%;
+        font-size: 35px;
+        font-family: 'Bangers', cursive;
+    }
+    
+    .div-general-text .div-texto .p-primer{
+        font-size: 25px;
+        font-family: 'Amatic SC', cursive;
+        margin-bottom: -50%;
+    }
+}
+

@@ -1,0 +1,85 @@
+.div-general{
+    height: auto;
+    width: 100vw;
+    background-color: #e8e8e8;
+}
+
+.div-general .div-text{
+    width: 99%;
+}
+
+.div-general .div-text p{
+    font-family: "Quicksand", sans-serif;
+    font-size: 23px;
+    text-align: justify;
+}
+
+.div-general .div-general-imagenes{
+    top: 0;
+    bottom: 0;
+    width: 90vw;
+    height: 90%;
+    margin: auto;
+    justify-content: center;
+}
+
+.div-general .div-general-imagenes .div-imagenes{
+    width: auto;
+    height: auto;
+    padding-top: 2%;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.div-general .div-general-imagenes h2{
+    font-family: 'Carter One', cursive;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 5%;
+}
+
+.div-general .div-general-imagenes .div-imagenes .div-img h3{
+    padding-top: 5%;
+    font-family: 'Play', sans-serif;
+}
+
+.div-general .div-general-imagenes .div-imagenes .imgs2{
+    margin-top: 4%;
+}
+
+.div-general .div-general-imagenes .div-imagenes .imgs2 .img-php{
+    width: 80px;
+    height: 42px;
+    margin-top: 7.5%;
+}
+
+.div-general .div-general-imagenes .div-imagenes .imgs2 .img-MySQL{
+    width: 80px;
+    height: 41px;
+    margin-top: 8%;
+}
+
+.div-general .div-general-imagenes .div-imagenes .imgs2 .img-AdobeXD{
+    width: 50px;
+    height: 50px;
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 850px){
+    .div-general .div-general-imagenes .div-imagenes .div-img h3{
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .div-general .div-general-imagenes .div-imagenes .div-img h3{
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+/*
+    Cuando se hace scroll hacia abajo, lo que hace mdbootstrap agrega la clase "top-nav-collapse" asi que 
+    que esta clase modifica al navbar, asi se aprovecha para agregarle otro color al navbar
+*/
+.top-nav-collapse{
+    background-color: var(--negro) !important;
+}
+
+a{
+    font-family: 'Righteous', cursive;
+    font-size: 20px;
+}
+
+.activo {
+    border-bottom: 2px solid #ee4540;
+}
+

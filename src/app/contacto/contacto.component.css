@@ -1,0 +1,66 @@
+.div-general{
+    width: 100vw;
+    height: auto;
+    background-color: #f4f4f2;
+}
+
+.div-general h1{
+    padding-top: 2%;
+    text-align: center;
+    font-family: 'Carter One', cursive;
+    font-size: 40px;
+}
+
+.div-general .div-general-imagenes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-general .div-general-imagenes .div-imagenes{
+    margin-top: 1%;
+    text-align: center;
+    width: 80vw;
+    margin-bottom: 10vh;
+} 
+
+.div-general .div-general-imagenes .div-imagenes .div-img{ 
+    animation: movimiento 2.5s linear infinite;
+} 
+
+.div-general .div-general-imagenes .div-imagenes .div-img img{ 
+    border-radius: 55%;
+    transition: all .4s;
+} 
+
+.div-general .div-general-imagenes .div-imagenes .div-img .imagen-facebook:nth-child(1):hover{ 
+    box-shadow: 0px 0px 0px 25px #1877f2;
+} 
+
+.div-general .div-general-imagenes .div-imagenes .div-img .imagen-instagram:nth-child(1):hover{ 
+    box-shadow: 0px 0px 0px 25px #c32aa3;
+} 
+
+.div-general .div-general-imagenes .div-imagenes .div-img .imagen-gmail:nth-child(1):hover{ 
+    box-shadow: 0px 0px 0px 25px #D44C3D;
+} 
+
+@keyframes movimiento{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(20px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.inputCorreo{
+    border: none;
+    background: none;
+    width: 100%;
+}

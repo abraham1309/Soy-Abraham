@@ -1,0 +1,85 @@
+<div class="div-general">
+            <h1 data-aos="fade-down" data-aos-duration="2000">Contacto</h1>
+    <div class="div-general-imagenes">
+        <div class="div-imagenes">
+            <div class="row">
+                <div class="col-4  div-img" data-aos="fade-left" data-aos-duration="2000">
+                    <a href="https://www.facebook.com/abraham.agyirregutierrez.7">
+                        <img class="imagen-facebook" src="../../assets/imagenes/Facebook.png" alt="Facebook" srcset="">
+                    </a>
+                </div>
+
+                <div class="col-4 div-img" data-aos="fade-up" data-aos-duration="2000">
+                    <a href="https://www.instagram.com/abrahaguirre/?hl=es-la">
+                        <img class="imagen-instagram" src="../../assets/imagenes/Instagram.png" alt="Instagram" srcset="">
+                    </a>
+                </div>
+
+                <div class="col-4 div-img" data-aos="fade-right" data-aos-duration="2000">
+                    <img class="imagen-gmail" src="../../assets/imagenes/Gmail.png" alt="Gmail" srcset="" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Hola mi estimado cliente, me puede enviar un correo con su propuesta de proyecto, en cuanto lo reciba me comunicare con usted.
+          <br>
+          <br>
+          <input type="text" id="InputCorreo" [(ngModel)]="correo" class="inputCorreo" disabled>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+          <button type="button" class="btn btn-secondary copiar" data-bs-dismiss="modal" data-clipboard-text="Hola mundo" cdkCopyToClipboard="{{correo}}">Copiar correo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Hola mi estimado cliente, me puede enviar un correo con su propuesta de proyecto, en cuanto lo reciba me comunicare con usted.
+            <br>
+            <br>
+            Correo:
+            <input type="text" id="InputCorreo" [(ngModel)]="correo" class="inputCorreo" disabled>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal" cdkCopyToClipboard="{{correo}}">Copiar correo</button>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalToggleLabel2">Modal 2</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Correo copiado al portapapeles
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,37 @@
+<!--Todo el navbar es de bootstrap
+    -el "fixed-top" sirve para cuando se realize scroll se queda fijo el navbar en la parte de arriba
+-->
+<!--El "scrolling-navbar" es parte de mdbootstrap, sirve para cuando se realize scroll el navbar se hace mas chico-->
+
+<!-- el " "(click)="enlaceScroll('idInicio')" ", sirve para el scroll, le pasamos una id, qu esta id se encuentra en "app.component.html" -->
+<nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top" style="width: 100vw;   background-color: rgba(23, 24, 21, 0)">
+  <div class="container-fluid">
+    <a class="navbar-brand" aria-current="page" [routerLink]="['']" (click)="enlaceScroll('idInicio')" data-aos="fade-right" data-aos-duration="2000">Abraham</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto" data-aos="fade-left" data-aos-duration="2000">
+        <li class="nav-item" routerLinkActive="activo" [routerLinkActiveOptions]="{exact: true}">
+          <a class="nav-link" aria-current="page" [routerLink]="['']" (click)="enlaceScroll('idInicio')">Inicio</a>
+        </li>
+        
+        <li class="nav-item" routerLinkActive="activo" [routerLinkActiveOptions]="{exact: true}">
+          <a class="nav-link" [routerLink]="['SobreMi']" (click)="enlaceScroll('idSobreMi')">Sobre mi</a>
+        </li>
+
+        <li class="nav-item" routerLinkActive="activo" [routerLinkActiveOptions]="{exact: true}">
+          <a class="nav-link" [routerLink]="['proyectos']" (click)="enlaceScroll('idProyectos')" >Proyectos</a>
+        </li>
+
+        <li class="nav-item" routerLinkActive="activo" [routerLinkActiveOptions]="{exact: true}">
+          <a class="nav-link" [routerLink]="['tecnologias']" (click)="enlaceScroll('idTecnologias')" >Tecnologias</a>
+        </li>
+
+        <li class="nav-item" routerLinkActive="activo" [routerLinkActiveOptions]="{exact: true}">
+          <a class="nav-link" [routerLink]="['contacto']" (click)="enlaceScroll('idContacto')">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
