@@ -8,10 +8,10 @@
   <div class="container-fluid">
     <a class="navbar-brand" aria-current="page" [routerLink]="['']" (click)="enlaceScroll('idInicio')" data-aos="fade-right" data-aos-duration="2000">Abraham</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon" data-aos="fade-left" data-aos-duration="2000"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto" data-aos="fade-left" data-aos-duration="2000">
+    <div class="collapse navbar-collapse" id="navbarNav" style="overflow-x: hidden;">
+      <ul class="navbar-nav ml-auto" data-aos="fade-down" data-aos="fade-left" data-aos-duration="2000">
         <li class="nav-item" routerLinkActive="activo" [routerLinkActiveOptions]="{exact: true}">
           <a class="nav-link" aria-current="page" [routerLink]="['']" (click)="enlaceScroll('idInicio')">Inicio</a>
         </li>

@@ -29,6 +29,7 @@
   height: 100%;
   margin-top: 11%;
   margin-bottom: 11%;
+  overflow-x: hidden;
 }
 
 .div-general .div-general-text .div-text{

@@ -32,6 +32,8 @@
 }
 
 .div-general .div-general-imagenes h2{
+    overflow-x: hidden;
+    overflow-y: hidden;
     font-family: 'Carter One', cursive;
     font-size: 40px;
     text-align: center;
@@ -44,6 +46,8 @@
 }
 
 .div-general .div-general-imagenes .div-imagenes .imgs2{
+    display: flex;
+    justify-content: center;
     margin-top: 4%;
 }
 
@@ -71,12 +75,34 @@
     }
 }
 
+@media screen and (max-width: 767px){
+    .div-general .div-text{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .div-general .div-text p{
+        text-align: center;
+    }
+}
+
+
 @media screen and (max-width: 500px){
     .div-general .div-general-imagenes .div-imagenes .div-img h3{
         font-size: 18px;
     }
 }
 
+@media screen and (max-width: 400px){
+    .div-general .div-text{
+        padding-bottom: 10%;
+    }
+
+    .div-general .div-text p{
+        font-size: 18px;
+    }
+}
 
 
 

@@ -10,6 +10,10 @@
   align-items: center;
 }
 
+.div-General .div-saludo .sub-div .div-text{
+  overflow-x: hidden;
+}
+
 .div-General .div-saludo .sub-div .div-imagen .imagen-persona {
   width: 300px;
   height: 300px;
