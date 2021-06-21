@@ -5,8 +5,9 @@
 }
 
 .div-General .div-saludo {
-  justify-content: center;
+  height: 100vh;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -202,7 +203,10 @@
 
 
 .div-General .div-eslogan{
-  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   margin-right: -50px;
 }
 
@@ -212,13 +216,13 @@
   font-family: "Teko", sans-serif;
   font-size: 80px;
   text-transform: uppercase;
+}
 
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 95%;
-  height: 30%;
-  margin: auto;
+.div-General .div-eslogan .div-p2{
+  text-align: right;
+  color: var(--blanco);
+  font-family: "Teko", sans-serif;
+  font-size: 45px;
 }
 
 .fondo {
@@ -251,18 +255,35 @@
     border: 5px solid var(--blanco);
   }
 
+  .div-General .div-saludo{
+    margin-left: 1.7%;
+    height: auto;
+  }
+
   .div-General .div-eslogan{
-    margin-top: 2%;
-    display:flex;
-    justify-content: center;
+    height: auto;
+    margin-left: 1.7%;
+    display: flex;
+    text-align: center;
     align-items: center;
+    flex-direction: column;
   }
 
   .div-General .div-eslogan .div-p{
-    width: 50%;
     text-align: center;
-    font-size: 50px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 60px;
+  }
 
+  .div-General .div-eslogan .div-p2{
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    font-size: 40px;
   }
 }
 
@@ -277,11 +298,40 @@
     margin-top: 20%;
   }
 
+  .div-General .div-saludo{
+    margin-left: 1.9%;
+    height: 65vh;
+  }
+
+  .div-General .div-eslogan{
+    margin-left: 1.9%;
+    height: 35vh;
+  }
+
   .div-General .div-eslogan .div-p{
     width: 80%;
-    text-align: center;
-    font-size: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 50px;
+  }
 
+  .div-General .div-eslogan .div-p2{
+    margin-right: 10%;
+
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .div-General .div-saludo{
+    margin-left: 2.3%;
+    height: 60vh;
+  }
+
+  .div-General .div-eslogan{
+    margin-left: 2.3%;
+    height: 40vh;
   }
 }
 
@@ -318,10 +368,24 @@
   }
 
   .div-General .div-eslogan .div-p{
-    width: 80%;
-    text-align: center;
     font-size: 40px;
-    margin-bottom: 15%;
-    margin-left: 5%;
+  }
+
+  .div-General .div-eslogan .div-p2{
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .div-General .div-eslogan{
+    margin-top: 5%;
+  }
+
+  .div-General .div-eslogan .div-p{
+    font-size: 35px;
+  }
+
+  .div-General .div-eslogan .div-p2{
+    font-size: 20px;
   }
 }
