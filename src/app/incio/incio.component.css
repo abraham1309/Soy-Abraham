@@ -1,18 +1,34 @@
 .div-General {
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 115vh;
+}
+
+.fondo {
+  background: linear-gradient(rgba(43, 48, 44, 0.5), rgba(43, 48, 44, 0.5)),
+    url(../../assets/imagenes/fondo.jpg);
+  height: 115vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 .div-General .div-saludo {
-  height: 100vh;
+  height: 115vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .div-General .div-saludo .sub-div .div-text{
   overflow-x: hidden;
+}
+
+.div-General .div-saludo .sub-div .div-imagen{
+  text-align: center;
 }
 
 .div-General .div-saludo .sub-div .div-imagen .imagen-persona {
@@ -22,12 +38,11 @@
   border: 9px solid var(--blanco);
 }
 
-
 /*Desde aqui*/
 .text-nombre {  /*Le damos estilos al texto*/
     text-align: center;
     font-family: "Spartan", sans-serif;
-    font-size: 30px;
+    font-size: 1.85rem;
     margin-left: 10%;
     color: white;
     position: relative;
@@ -210,11 +225,15 @@
   margin-right: -50px;
 }
 
+.div-General .div-eslogan2{
+  display: none;
+}
+
 .div-General .div-eslogan .div-p{
   text-align: right;
   color: var(--blanco);
   font-family: "Teko", sans-serif;
-  font-size: 80px;
+  font-size: 5rem;
   text-transform: uppercase;
 }
 
@@ -222,19 +241,7 @@
   text-align: right;
   color: var(--blanco);
   font-family: "Teko", sans-serif;
-  font-size: 45px;
-}
-
-.fondo {
-  background: linear-gradient(rgba(43, 48, 44, 0.5), rgba(43, 48, 44, 0.5)),
-    url(../../assets/imagenes/fondo.jpg);
-  height: 105vh;
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-
+  font-size: 2.81rem;
 }
 
 @media screen and (max-width: 880px){
@@ -245,45 +252,43 @@
 
 @media screen and (max-width: 767px){
   .div-General{
-    text-align: center;
+    width: 90vw;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
   .div-General .div-saludo .sub-div .div-imagen .imagen-persona {
     width: 250px;
     height: 250px;
-    margin-top: 25%;
     border: 5px solid var(--blanco);
   }
 
-  .div-General .div-saludo{
-    margin-left: 1.7%;
-    height: auto;
+  .div-General .div-eslogan{
+    display: none;
   }
 
-  .div-General .div-eslogan{
-    height: auto;
-    margin-left: 1.7%;
+  .div-General .div-eslogan2{
     display: flex;
-    text-align: center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100vw;
   }
 
-  .div-General .div-eslogan .div-p{
+  .div-General .div-eslogan2 .div-parrafo{
+    width: 95%;
     text-align: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: 60px;
+    font-size: 3.75rem;
+    color: var(--blanco);
+    font-family: "Teko", sans-serif;
   }
 
-  .div-General .div-eslogan .div-p2{
+  .div-General .div-eslogan2 .div-parrafo2{
+    width: 95%;
     text-align: center;
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 10%;
-    font-size: 40px;
+    font-size: 2.5rem;
+    color: var(--blanco);
+    font-family: "Teko", sans-serif;
   }
 }
 
@@ -295,43 +300,14 @@
   .div-General .div-saludo .sub-div .div-imagen .imagen-persona {
     width: 225px;
     height: 225px;
-    margin-top: 20%;
   }
 
-  .div-General .div-saludo{
-    margin-left: 1.9%;
-    height: 65vh;
+  .div-General .div-eslogan2 .div-parrafo{
+    font-size: 3.12rem;
   }
 
-  .div-General .div-eslogan{
-    margin-left: 1.9%;
-    height: 35vh;
-  }
-
-  .div-General .div-eslogan .div-p{
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: 50px;
-  }
-
-  .div-General .div-eslogan .div-p2{
-    margin-right: 10%;
-
-    font-size: 30px;
-    margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .div-General .div-saludo{
-    margin-left: 2.3%;
-    height: 60vh;
-  }
-
-  .div-General .div-eslogan{
-    margin-left: 2.3%;
-    height: 40vh;
+  .div-General .div-eslogan2 .div-parrafo2{
+    font-size: 1.87rem;
   }
 }
 
@@ -339,7 +315,7 @@
   .text-nombre {  /*Le damos estilos al texto*/
     text-align: center;
     font-family: "Spartan", sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-left: 10%;
     color: white;
     position: relative;
@@ -356,36 +332,26 @@
     margin-right: 5%;
 }
 
-  .div-General{
-    text-align: center;
-  }
-
   .div-General .div-saludo .sub-div .div-imagen .imagen-persona {
     width: 225px;
     height: 225px;
-    margin-top: 20%;
-    margin-left: 6%;
   }
 
-  .div-General .div-eslogan .div-p{
-    font-size: 40px;
+  .div-General .div-eslogan2 .div-parrafo{
+    font-size: 2.4rem;
   }
 
-  .div-General .div-eslogan .div-p2{
-    font-size: 25px;
+  .div-General .div-eslogan2 .div-parrafo2{
+    font-size: 1.48rem;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .div-General .div-eslogan{
-    margin-top: 5%;
+  .div-General .div-eslogan2 .div-parrafo{
+    font-size: 2.18rem;
   }
 
-  .div-General .div-eslogan .div-p{
-    font-size: 35px;
-  }
-
-  .div-General .div-eslogan .div-p2{
-    font-size: 20px;
+  .div-General .div-eslogan2 .div-parrafo2{
+    font-size: 1.25rem;
   }
 }
