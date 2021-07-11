@@ -7,9 +7,10 @@
 .seccion-servicios .div-titulo{
     display: flex;
     position: absolute;
-    margin-top: 3%;
+    margin-top: 5%;
     justify-content: center;
     z-index: 2;
+    overflow: hidden;
 }
 
 .seccion-servicios h2{
@@ -24,6 +25,7 @@
     text-align: center;
     flex-direction: column;
     height: 100vh;
+    overflow: hidden;
 }
 
 .seccion-servicios .div-general-servicio .div-servicio{
@@ -46,4 +48,54 @@
 .seccion-servicios .div-general-servicio .div-servicio p{
     font-family: "Quicksand", sans-serif;
     font-size: 18px;
+}
+
+@media screen and (max-width: 850px) {
+    .seccion-servicios .div-titulo{
+        display: flex;
+        position: absolute;
+        margin-top: 3%;
+        justify-content: center;
+        z-index: 2;
+    }
+
+    .seccion-servicios .div-general-servicio .div-servicio h3{
+        font-size: 22px;
+    }
+    
+    .seccion-servicios .div-general-servicio .div-servicio p{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .seccion-servicios{
+        height: auto;
+        padding-bottom: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .seccion-servicios .div-titulo{
+        position: relative;
+        margin-top: 4%;
+        margin-bottom: 5%;
+    }
+
+    .seccion-servicios .div-general-servicio{
+        height: auto;
+        margin-bottom: 2%;
+    }
+    .seccion-servicios .div-general-servicio .div-servicio-bordes{
+        border-left: none;
+        border-right: none;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .seccion-servicios h2{
+        font-size: 35px;
+    }
 }

@@ -5,6 +5,7 @@ import { IncioComponent } from './incio/incio.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { SobreMiComponent } from "./sobre-mi/sobre-mi.component";
 import { TecnologiasComponent } from './tecnologias/tecnologias.component';
+import { ServiciosComponent } from './servicios/servicios.component';
 
 /*Investigar de Anchor Scrolling https://azaharafernandezguizan.medium.com/anchor-link-en-angular-6-69ab8cfa92a3*/
 /* <app-navbar></app-navbar>
@@ -22,7 +23,11 @@ const routes: Routes = [
   },
   
   {
-     path: "SobreMi", component: SobreMiComponent
+     path: "sobre-mi", component: SobreMiComponent
+  },
+
+  {
+    path: "servicios", component: ServiciosComponent
   },
 
   {
