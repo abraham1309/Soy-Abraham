@@ -1,7 +1,7 @@
 .div-general{
     height: auto;
     width: 100vw;
-    background-color: #e8e8e8;
+    background-color: var(--color-fondo1);
 }
 
 .div-general .div-text{

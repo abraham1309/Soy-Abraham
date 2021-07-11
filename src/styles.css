@@ -10,6 +10,8 @@
 :root {
 	--blanco: #fff;
 	--negro: #000;
+	--color-fondo1: #f4f4f2;
+	--color-fondo2: #e8e8e8;
 }
 
 html {

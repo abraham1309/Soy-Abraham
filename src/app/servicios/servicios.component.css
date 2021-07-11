@@ -1,0 +1,49 @@
+.seccion-servicios{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-fondo2);
+}
+
+.seccion-servicios .div-titulo{
+    display: flex;
+    position: absolute;
+    margin-top: 3%;
+    justify-content: center;
+    z-index: 2;
+}
+
+.seccion-servicios h2{
+    border-bottom: 4px solid #ee4540;
+    font-family: "Carter One", cursive;
+    font-size: 40px;
+}
+
+.seccion-servicios .div-general-servicio{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.seccion-servicios .div-general-servicio .div-servicio{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.seccion-servicios .div-general-servicio .div-servicio-bordes{
+    border-left: 3px solid #ee4540;
+    border-right: 3px solid #ee4540;
+}
+
+
+
+.seccion-servicios .div-general-servicio .div-servicio h3{
+    font-size: 27px;
+    font-family: 'Play', sans-serif;
+}
+
+.seccion-servicios .div-general-servicio .div-servicio p{
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+}
