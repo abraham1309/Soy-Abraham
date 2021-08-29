@@ -16,7 +16,6 @@ export class NavbarComponent implements OnInit {
     /*Estamos llamando a "viewporScroller", con el ".scrollToAnchor" le estamos diciendo que haga un scroll, 
     al elemento con la id "IdElemento"*/
   }
-
   ngOnInit(): void {
   }
 
