@@ -2,10 +2,11 @@
     height: auto;
     width: 100vw;
     background-color: var(--color-fondo1);
+    padding-bottom: 5%;
 }
 
 .div-general .div-text{
-    width: 99%;
+    width: 100%;
 }
 
 .div-general .div-text p{
@@ -23,21 +24,38 @@
     justify-content: center;
 }
 
+
+.div-general .div-titulo{
+    padding-top: 6%;
+}
+
+.div-general .div-titulo h2{
+    overflow: hidden;
+    font-family: 'Carter One', cursive;
+    font-size: 40px;
+    text-align: center;
+
+    position: relative;
+    display: grid;
+    place-items: center;
+    z-index: 0
+}
+
+.div-general .div-titulo h2::before{
+    content: '';
+    position: absolute;
+    width: 270px;
+    height: 30%;
+    background-color: #ee4540;
+    z-index: -1;
+}
+
 .div-general .div-general-imagenes .div-imagenes{
     width: auto;
     height: auto;
     padding-top: 2%;
     text-align: center;
     padding-bottom: 3%;
-}
-
-.div-general .div-general-imagenes h2{
-    overflow-x: hidden;
-    overflow-y: hidden;
-    font-family: 'Carter One', cursive;
-    font-size: 40px;
-    text-align: center;
-    padding-top: 5%;
 }
 
 .div-general .div-general-imagenes .div-imagenes .div-img h3{

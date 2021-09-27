@@ -1,13 +1,13 @@
 .div-General {
   position: absolute;
   width: 100vw;
-  height: 115vh;
+  height: 105vh;
 }
 
 .fondo {
   background: linear-gradient(rgba(43, 48, 44, 0.5), rgba(43, 48, 44, 0.5)),
     url(../../assets/imagenes/fondo.jpg);
-  height: 115vh;
+  height: 105vh;
   width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,7 +16,7 @@
 }
 
 .div-General .div-saludo {
-  height: 115vh;
+  height: 105vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -278,7 +278,7 @@
   .div-General .div-eslogan2 .div-parrafo{
     width: 95%;
     text-align: center;
-    font-size: 3.75rem;
+    font-size: 3.70rem;
     color: var(--blanco);
     font-family: "Teko", sans-serif;
   }
@@ -298,16 +298,16 @@
   }
 
   .div-General .div-saludo .sub-div .div-imagen .imagen-persona {
-    width: 225px;
-    height: 225px;
+    width: 200px;
+    height: 200px;
   }
 
   .div-General .div-eslogan2 .div-parrafo{
-    font-size: 3.12rem;
+    font-size: 3.10rem;
   }
 
   .div-General .div-eslogan2 .div-parrafo2{
-    font-size: 1.87rem;
+    font-size: 1.80rem;
   }
 }
 
@@ -315,7 +315,7 @@
   .text-nombre {  /*Le damos estilos al texto*/
     text-align: center;
     font-family: "Spartan", sans-serif;
-    font-size: 1.25rem;
+    font-size: 1.22rem;
     margin-left: 10%;
     color: white;
     position: relative;
@@ -333,25 +333,25 @@
 }
 
   .div-General .div-saludo .sub-div .div-imagen .imagen-persona {
-    width: 225px;
-    height: 225px;
+    width: 175px;
+    height: 175px;
   }
 
   .div-General .div-eslogan2 .div-parrafo{
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .div-General .div-eslogan2 .div-parrafo2{
-    font-size: 1.48rem;
+    font-size: 1.40rem;
   }
 }
 
 @media screen and (max-width: 320px) {
   .div-General .div-eslogan2 .div-parrafo{
-    font-size: 2.18rem;
+    font-size: 2.10rem;
   }
 
   .div-General .div-eslogan2 .div-parrafo2{
-    font-size: 1.25rem;
+    font-size: 1.20rem;
   }
 }

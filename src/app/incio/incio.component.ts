@@ -13,7 +13,7 @@ export class IncioComponent implements OnInit {
 
     //Funcion para la animacion de escribir 
     var i=0;
-    const text="si se puede imaginar se puede programar";
+    const text="Si se puede imaginar se puede programar";
     var textOb1:any;
     var textOb12: any;
 

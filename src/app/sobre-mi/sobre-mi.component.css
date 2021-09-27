@@ -33,18 +33,32 @@
 }
 
 .div-general .div-general-text .div-text{
+  text-align: justify;
   width: 80%;
 }
 
-.div-general .div-general-text .div-text h2 {
+.div-general .div-general-text .div-text .div-titulo h2{
   font-family: "Carter One", cursive;
   font-size: 40px;
+
+  position: relative;
+  display: grid;
+  place-items: center;
+  z-index: 0
+}
+
+.div-general .div-general-text .div-text .div-titulo h2::before{
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 30%;
+  background-color: #ee4540;
+  z-index: -1;
 }
 
 .div-general .div-general-text .div-text p {
   font-family: "Quicksand", sans-serif;
   font-size: 22.5px;
-  text-align: justify;
 }
 
 @media screen and (max-width: 1100px) {
@@ -80,14 +94,13 @@
 
 
   .div-general .div-general-text .div-text {
-    margin-left: 8%;
-    margin-right: 8%;
     margin-bottom: 10%;
+    text-align: center;
+    width: 90%;
   }
 
   .div-general .div-general-text .div-text p {
     font-size: 21px;
-    width: auto;
   }
 }
 
@@ -130,11 +143,8 @@
     height: 250px;
   }
 
-  .div-general .div-general-text .div-text{
-    margin-left: 12%;
-  }
 
-  .div-general .div-general-text .div-text h2{
+  .div-general .div-general-text .div-text .div-titulo h2{
     font-size: 35px;
   }
 
