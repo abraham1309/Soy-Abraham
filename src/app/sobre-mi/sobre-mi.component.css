@@ -1,206 +1,198 @@
 .div-general {
-  width: 100vw;
-  height: auto;
-  background-color: var(--color-fondo1);
-  margin-left: 0;
+    width: 100vw;
+    height: auto;
+    background-color: var(--color-fondo1);
+    margin-left: 0;
 }
 
-.div-general .div-general-imagen{
-  z-index: 2;
+.div-general .div-general-imagen {
+    z-index: 2;
 }
 
-.div-general .div-general-imagen{
-  margin-top: 12%;
-  margin-bottom: 12%;
+.div-general .div-general-imagen {
+    margin-top: 12%;
+    margin-bottom: 12%;
 }
 
 .div-general .div-general-imagen .div-imagen img {
-  /*Las medidas deben de estar en px, si no no sirve*/
-  width: 253px;
-  height: 450px;
+    /*Las medidas deben de estar en px, si no no sirve*/
+    width: 253px;
+    height: 450px;
 }
 
-.div-general .div-general-text{
-  /*Estos estilos son para que el div hijo(div-text), quede centrado vertical y horizontal*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin-top: 11%;
-  margin-bottom: 11%;
-  overflow-x: hidden;
-}
-
-.div-general .div-general-text .div-text{
-  text-align: justify;
-  width: 80%;
-}
-
-.div-general .div-general-text .div-text .div-titulo h2{
-  font-family: "Carter One", cursive;
-  font-size: 40px;
-
-  position: relative;
-  display: grid;
-  place-items: center;
-  z-index: 0
-}
-
-.div-general .div-general-text .div-text .div-titulo h2::before{
-  content: '';
-  position: absolute;
-  width: 200px;
-  height: 30%;
-  background-color: #ee4540;
-  z-index: -1;
-}
-
-.div-general .div-general-text .div-text p {
-  font-family: "Quicksand", sans-serif;
-  font-size: 22.5px;
-}
-
-@media screen and (max-width: 1100px) {
-  .div-general .div-general-imagen .div-imagen img  {
-    width: 208px;
-    height: 370px;
-  }
-}
-
-@media screen and (max-width: 870px) {
-  .div-general .div-general-imagen .div-imagen img {
-    width: 196px;
-    height: 350px;
-  }
-
-  .div-general .div-general-text .div-text p {
-    font-size: 21px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .div-general {
-    height: auto;
-  }
-
-  .div-general .div-general-imagen {
-    height: 55vh;
-    width: 100vw;
+.div-general .div-general-text {
+    /*Estos estilos son para que el div hijo(div-text), quede centrado vertical y horizontal*/
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+    width: 100%;
+    height: 100%;
+    margin-top: 11%;
+    margin-bottom: 11%;
+    overflow-x: hidden;
+}
 
+.div-general .div-general-text .div-text {
+    text-align: justify;
+    width: 80%;
+}
 
-  .div-general .div-general-text .div-text {
-    margin-bottom: 10%;
-    text-align: center;
-    width: 90%;
-  }
+.div-general .div-general-text .div-text .div-titulo h2 {
+    font-family: "Carter One", cursive;
+    font-size: 40px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    z-index: 0
+}
 
-  .div-general .div-general-text .div-text p {
-    font-size: 21px;
-  }
+.div-general .div-general-text .div-text .div-titulo h2::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 30%;
+    background-color: #ee4540;
+    z-index: -1;
+}
+
+.div-general .div-general-text .div-text p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 22.5px;
+}
+
+@media screen and (max-width: 1100px) {
+    .div-general .div-general-imagen .div-imagen img {
+        width: 208px;
+        height: 370px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .div-general .div-general-imagen .div-imagen img {
+        width: 196px;
+        height: 350px;
+    }
+    .div-general .div-general-text .div-text p {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .div-general {
+        height: auto;
+    }
+    .div-general .div-general-imagen {
+        height: 55vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .div-general .div-general-text .div-text {
+        margin-bottom: 10%;
+        text-align: center;
+        width: 90%;
+    }
+    .div-general .div-general-text .div-text p {
+        font-size: 21px;
+    }
 }
 
 @media screen and (max-width: 605px) {
-  a:before,
-  a:after {
-    width: 118%;
-    height: 109%;
-  }
-
-  .div-general .div-general-imagen {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .div-general .div-general-imagen .div-imagen img {
-    width: 168px;
-    height: 300px;
-  }
-
-  .div-general .div-general-text{
-    margin-top: 2%;
-    margin-bottom: 0;
-  }
-
-  .div-general .div-general-text .div-text p {
-    font-size: 19px;
-  }
+    a:before,
+    a:after {
+        width: 118%;
+        height: 109%;
+    }
+    .div-general .div-general-imagen {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .div-general .div-general-imagen .div-imagen img {
+        width: 168px;
+        height: 300px;
+    }
+    .div-general .div-general-text {
+        margin-top: 2%;
+        margin-bottom: 0;
+    }
+    .div-general .div-general-text .div-text p {
+        font-size: 19px;
+    }
 }
 
-@media screen and (max-width: 490px){
-  a:before,
-  a:after {
-    width: 118%;
-    height: 109%;
-  }
-
-  .div-general .div-general-imagen .div-imagen img{
-    width: 140px;
-    height: 250px;
-  }
-
-
-  .div-general .div-general-text .div-text .div-titulo h2{
-    font-size: 35px;
-  }
-
-  .div-general .div-general-text .div-text p{
-    font-size: 19px;
-  }
+@media screen and (max-width: 490px) {
+    a:before,
+    a:after {
+        width: 118%;
+        height: 109%;
+    }
+    .div-general .div-general-imagen .div-imagen img {
+        width: 140px;
+        height: 250px;
+    }
+    .div-general .div-general-text .div-text .div-titulo h2 {
+        font-size: 35px;
+    }
+    .div-general .div-general-text .div-text p {
+        font-size: 19px;
+    }
 }
+
 
 /*Desde aqui*/
+
 a {
-  color: #fffbf1;
-  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
-  font-size: 80px;
-  font-weight: bold;
-  text-decoration: none;
-  letter-spacing: -3px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  cursor: default;
+    color: #fffbf1;
+    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+    font-size: 80px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -3px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    cursor: default;
 }
 
 a:before,
 a:after {
-  content: "";
-  padding: 0.9em 0.4em;
-  position: absolute;
-  left: 50%;
-  width: 120%;
-  height: 110%;
-  top: 50%;
-  display: block;
-  border: 15px solid red;
-  transform: translateX(-50%) translateY(-50%) rotate(0deg);
-  animation: 10s infinite alternate ease-in-out tipsy;
+    content: "";
+    padding: 0.9em 0.4em;
+    position: absolute;
+    left: 50%;
+    width: 120%;
+    height: 110%;
+    top: 50%;
+    display: block;
+    border: 15px solid var(--azul);
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation: 10s infinite alternate ease-in-out tipsy;
 }
 
 a:before {
-  border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
-  z-index: -1;
+    border-color: var(--azul) var(--azul) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
 }
 
 a:after {
-  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
-  box-shadow: 25px 25px 25px rgba(46, 46, 49, 0.8);
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) var(--azul) var(--azul);
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, 0.8);
 }
 
+
 /*Hacemos la animacion para el borde*/
+
 @keyframes tipsy {
-  0% {
-    transform: translateX(-50%) translateY(-50%) rotate(0deg);
-  }
-  100% {
-    transform: translateX(-50%) translateY(-50%) rotate(360deg);
-  }
+    0% {
+        transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
 }
+
+
 /*Hasta aqui son los estilos para la animacion de la imagen*/

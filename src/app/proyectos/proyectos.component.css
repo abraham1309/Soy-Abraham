@@ -1,147 +1,180 @@
-.div-titulo{
-    position: absolute;
-    width: 100vw;
-    text-align: center;
-    padding-top: 5%;
+* {
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .6s;
+    transition-duration: .6s;
+    -webkit-transition-timing-function: ease;
+    transition-timing-function: ease;
 }
 
+.div-general-proyectos {
+    height: auto;
+    width: 100vw;
+    padding-top: 5%;
+    background-color: var(--color-fondo1);
+    overflow: hidden;
+}
 
-.div-titulo h2{
-    font-family: "Carter One", cursive;
-    font-size: 40px;
-    color: var(--blanco);
+.div-general-proyectos .div-titulo {
+    padding-top: 2%;
+}
+
+.div-general-proyectos .div-titulo h2 {
     text-align: center;
-    z-index: 3;
-
+    font-family: 'Carter One', cursive;
+    font-size: 40px;
     position: relative;
     display: grid;
     place-items: center;
-    z-index: 1;
+    z-index: 0
 }
 
-
-.div-titulo h2::before{
+.div-general-proyectos .div-titulo h2::before {
     content: '';
     position: absolute;
-    width: 225px;
+    width: 220px;
     height: 30%;
     background-color: #ee4540;
     z-index: -1;
 }
 
-.div-general-text{
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-}
-
-.div-general-text .div-texto{
-    text-align: center;
-    color: var(--blanco);
+.div-general-proyectos .proyecto {
     height: auto;
-    z-index: 3;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    /*border-top: 1px solid rgba(209, 209, 209, 0.623);*/
 }
 
-.div-general-text .div-texto .p-proximamente{
-    margin-bottom: -7%;
-    font-size: 80px;
-    font-family: 'Bangers', cursive;
+
+/*Estilos para la imagen*/
+
+.div-general-imagen {
+    height: auto;
 }
 
-.div-general-text .div-texto .p-primer{
-    margin-bottom: -25%;
-    font-size: 50px;
-    font-family: 'Amatic SC', cursive;
+.div-general-proyectos .proyecto .div-general-imagen .div-imagen {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
-.div-general-text .div-texto .linea1{
-    font-size: 125px;
-    color: rgba(255, 255, 255, 0.411);
-    margin-bottom: -5%;
+.div-general-proyectos .proyecto .div-general-imagen .div-imagen img {
+    width: 90%;
 }
 
-.div-general-text .div-texto .linea2{
-    font-size: 125px;
-    color: rgba(255, 255, 255, 0.411);
-    margin-bottom: 30%;
+
+/*Estilo para la descripcion*/
+
+.div-general-proyectos .proyecto .div-general-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }
 
-.div-color-fondo {
-    mix-blend-mode: difference;
-    z-index: -2;
+.div-general-proyectos .proyecto .div-general-texto .div-text {
+    width: 80%;
 }
 
-.div-color-fondo::before {
-    content: "";
+.div-general-proyectos .proyecto .div-general-texto .div-text h3 {
+    font-family: 'Play', sans-serif;
+    font-size: 39px;
+}
+
+.div-general-proyectos .proyecto .div-general-texto .div-text p {
+    font-family: "Quicksand", sans-serif;
+    font-size: 17px;
+    width: 85%;
+}
+
+.div-general-proyectos .proyecto .div-general-texto .div-text a {
+    display: block;
+    line-height: 35px;
+    max-width: 165px;
+    position: relative;
+    text-transform: uppercase;
+    vertical-align: middle;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+    font-family: 'Play', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.div-general-proyectos .proyecto .div-general-texto .div-text a svg {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
     left: 0;
-    background: repeating-linear-gradient(to bottom, transparent 0%,rgba(255, 255, 255, 0.144) .30%, transparent 1%);
+    width: 100%;
+    height: 35px;
 }
 
-.fondo{
-    background: linear-gradient(rgba(43, 48, 44, 0.719), rgba(43, 48, 44, 0.719)), url(../../assets/imagenes/fondoProximamente.png);
-    height: 100vh;
-    width: 100vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+.div-general-proyectos .proyecto .div-general-texto .div-text a rect {
+    fill: none;
+    stroke: var(--azul);
+    stroke-width: 3;
+    stroke-dasharray: 422, 0;
 }
 
-@media screen and (max-width: 650px){
-    .div-general-text .div-texto .p-proximamente{
-        margin-bottom: -7%;
-        font-size: 55px;
-        font-family: 'Bangers', cursive;
-    }
-    
-    .div-general-text .div-texto .p-primer{
-        font-size: 35px;
-        font-family: 'Amatic SC', cursive;
-        margin-bottom: -35%;
-    }
-
-    .div-titulo{
-        padding-top: 15%;
-    }
-    
+.div-general-proyectos .proyecto .div-general-texto .div-text a:hover {
+    letter-spacing: 2px;
+    font-weight: 900;
+    color: var(--azul);
 }
 
-@media screen and (max-width: 450px){
-    .div-titulo h2{
-        font-size: 40px;
+.div-general-proyectos .proyecto .div-general-texto .div-text a:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    -webkit-transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+    stroke: #ee4540;
+}
 
+@media screen and (max-width: 991px) {
+    .div-general-proyectos .proyecto .div-general-imagen .div-imagen {
+        justify-content: center;
+        align-items: center;
     }
+    .div-general-proyectos .proyecto .div-general-imagen .div-imagen img {
+        margin-bottom: 5%;
+        width: 55%;
+    }
+    .div-general-proyectos .proyecto .div-general-texto .div-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .div-general-proyectos .proyecto .div-general-texto .div-text p {
+        width: 100%;
+    }
+}
 
-    .div-general-text .div-texto .p-proximamente{
-        margin-bottom: -7%;
-        font-size: 45px;
-        font-family: 'Bangers', cursive;
+@media screen and (max-width: 570px) {
+    .div-general-proyectos .proyecto .div-general-imagen .div-imagen img {
+        width: 80%;
     }
-    
-    .div-general-text .div-texto .p-primer{
+}
+
+@media screen and (max-width: 500px) {
+    .div-general-proyectos .proyecto .div-general-texto .div-text h3 {
+        font-family: 'Play', sans-serif;
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .div-general-proyectos .proyecto .div-general-texto .div-text h3 {
         font-size: 25px;
-        font-family: 'Amatic SC', cursive;
-        margin-bottom: -40%;
+    }
+    .div-general-proyectos .proyecto .div-general-texto .div-text p {
+        font-size: 15px;
     }
 }
-
-@media screen and (max-width: 360px){
-    .div-general-text .div-texto .p-proximamente{
-        margin-bottom: -7%;
-        font-size: 35px;
-        font-family: 'Bangers', cursive;
-    }
-    
-    .div-general-text .div-texto .p-primer{
-        font-size: 25px;
-        font-family: 'Amatic SC', cursive;
-        margin-bottom: -50%;
-    }
-}
-

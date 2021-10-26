@@ -1,25 +1,24 @@
-.div-general{
+.div-general {
     width: 100vw;
     height: auto;
-    background-color: var(--color-fondo2);
+    background-color: var(--color-fondo1);
 }
 
-.div-general .div-titulo{
+.div-general .div-titulo {
     margin-top: 2%;
 }
 
-.div-general .div-titulo h2{
+.div-general .div-titulo h2 {
     text-align: center;
     font-family: 'Carter One', cursive;
     font-size: 40px;
-
     position: relative;
     display: grid;
     place-items: center;
     z-index: 0
 }
 
-.div-general .div-titulo h2::before{
+.div-general .div-titulo h2::before {
     content: '';
     position: absolute;
     width: 220px;
@@ -28,65 +27,61 @@
     z-index: -1;
 }
 
-.div-general .div-general-imagenes{
+.div-general .div-general-imagenes {
     display: flex;
     justify-content: center;
     align-items: center;
- 
 }
 
-.div-general .div-general-imagenes .div-imagenes{
+.div-general .div-general-imagenes .div-imagenes {
     margin-top: 1%;
     text-align: center;
     width: 80vw;
     margin-bottom: 10vh;
-} 
+}
 
-.div-general .div-general-imagenes .div-imagenes .div-img{ 
+.div-general .div-general-imagenes .div-imagenes .div-img {
     animation: movimiento 2.5s linear infinite;
-} 
+}
 
-.div-general .div-general-imagenes .div-imagenes .div-img img{ 
+.div-general .div-general-imagenes .div-imagenes .div-img img {
     border-radius: 55%;
     transition: 0.8s ease-in 0.1s;
-} 
+}
 
-
-.div-general .div-general-imagenes .div-imagenes .div-img .imagen-facebook:nth-child(1):hover{ 
+.div-general .div-general-imagenes .div-imagenes .div-img .imagen-facebook:nth-child(1):hover {
     box-shadow: 0px 0px 0px 1500px #1877f2;
-} 
+}
 
-.div-general .div-general-imagenes .div-imagenes .div-img .imagen-instagram:nth-child(1):hover{ 
+.div-general .div-general-imagenes .div-imagenes .div-img .imagen-instagram:nth-child(1):hover {
     box-shadow: 0px 0px 0px 1500px #c32aa3;
-} 
+}
 
-.div-general .div-general-imagenes .div-imagenes .div-img .imagen-gmail:nth-child(1):hover{ 
+.div-general .div-general-imagenes .div-imagenes .div-img .imagen-gmail:nth-child(1):hover {
     box-shadow: 0px 0px 0px 1500px #D44C3D;
-} 
+}
 
-@keyframes movimiento{
-    0%{
+@keyframes movimiento {
+    0% {
         transform: translateY(0);
     }
-
-    50%{
+    50% {
         transform: translateY(20px);
     }
-
-    100%{
+    100% {
         transform: translateY(0);
     }
 }
 
-.inputCorreo{
+.inputCorreo {
     border: none;
     background: none;
     width: 100%;
 }
 
 @media screen and (max-width: 500px) {
-    .div-general .div-general-imagenes .div-imagenes .div-img img{ 
+    .div-general .div-general-imagenes .div-imagenes .div-img img {
         width: 50px;
         height: 50px;
-    } 
+    }
 }
