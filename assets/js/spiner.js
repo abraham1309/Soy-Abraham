@@ -8,7 +8,7 @@
             var preloader = $('.spinner-wrapper');
             setTimeout(function() {
                 preloader.fadeOut(preloaderFadeOutTime);
-            }, 4560);
+            }, 3000);
         }
         hidePreloader();
     });
