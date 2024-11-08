@@ -1,7 +1,7 @@
 .div-general {
     width: 100vw;
     height: auto;
-    background-color: var(--color-fondo1);
+    background-color: var(--color-fondo2);
 }
 
 .div-general .div-titulo {
